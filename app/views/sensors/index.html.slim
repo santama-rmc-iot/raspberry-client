@@ -1,0 +1,26 @@
+section.hero.is-primary
+  .hero-body
+    .container
+      h1.title
+        | センサーの一覧
+
+section.section
+  .container
+    .columns
+      .column
+        = render "search"
+      .column
+        = link_to "センサー追加", new_sensor_path, class: "button"
+
+section.section
+  .container
+    table.table
+      thead
+        th ID
+        th センサー名
+        th センサータイプ
+        th センサーログ
+        th
+        th
+      tbody
+        = render @sensors

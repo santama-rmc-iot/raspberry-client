@@ -5,6 +5,8 @@ ruby '2.5.0'
 
 gem 'devise'
 gem 'slim-rails'
+gem 'ransack', github: 'activerecord-hackery/ransack'
+gem 'enumerize'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'

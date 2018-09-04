@@ -1,0 +1,6 @@
+= search_form_for @search do |f|
+  .field.has-addons
+    .control
+      = f.search_field :name_cont, class: "input", placeholder: 'センサー名'
+    .control
+      = f.submit "検索", class: "button is-link"
